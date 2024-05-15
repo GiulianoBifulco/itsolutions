@@ -138,7 +138,8 @@ int main ()
 		printf("Escolha a opção desejada: \n\n");
 		printf("\t1 - Registrar clientes \n"); // o comando \t da um espaço em linha como se fosse tab
 		printf("\t2 - Consultar clientes \n");
-		printf("\t3 - Deletar cadastro \n\n\n\n"); // final do menu
+		printf("\t3 - Deletar cadastro \n"); 
+		printf("\t4 - Sair do sistema\n\n");// final do menu
 		printf("Opção:");
 	
 		scanf("%d", &opcao); //armazenar a escolha do usuario
@@ -157,6 +158,11 @@ int main ()
 			
 			case 3:
 			deletar();//chamada de funções
+			break;
+			
+			case 4:
+			printf("Obrigado por utilizar nosso sistema!\n");
+			return 0;
 			break;
 			
 			default:
